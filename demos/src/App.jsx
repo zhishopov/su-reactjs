@@ -1,5 +1,7 @@
+import "./MyButton.css";
+
 function MyButton() {
-  return <button>My Button</button>;
+  return <button className="my-button">My Button</button>;
 }
 
 function App() {
