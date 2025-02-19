@@ -1,14 +1,12 @@
-import "./MyButton.css";
-
-function MyButton() {
-  return <button className="my-button">My Button</button>;
-}
+import MyButton from "./MyButton.jsx";
+import Profile from "./Profile.jsx";
 
 function App() {
   return (
     <>
       <h1>Welcome to my app</h1>
       <MyButton></MyButton>
+      <Profile></Profile>
     </>
   );
 }
