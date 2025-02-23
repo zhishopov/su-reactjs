@@ -7,13 +7,28 @@ export default function KillCounter() {
     setCount(count + 1);
   };
 
-  if (count > 10) {
+  if (count > 5) {
     return <h2>GodLike</h2>;
   }
 
   let title = <h2>Kill Counter</h2>;
-  if (count == 1) {
-    title = <h1>First Blood</h1>;
+
+  switch (count) {
+    case 1:
+      title = <h2>First Blood</h2>;
+      break;
+    case 2:
+      title = <h2>Double Kill</h2>;
+      break;
+    case 3:
+      title = <h2>Triple Kill</h2>;
+      break;
+    case 4:
+      title = <h2>Multi Kill</h2>;
+      break;
+    case 5:
+      title = <h2>Mega Kill</h2>;
+      break;
   }
 
   return (
