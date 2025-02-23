@@ -1,4 +1,5 @@
 import Counter from "./components/Counter.jsx";
+import KillCounter from "./components/KillCounter.jsx";
 import MovieList from "./components/MovieList.jsx";
 import Timer from "./components/Timer.jsx";
 import MyButton from "./MyButton.jsx";
@@ -51,6 +52,7 @@ function App() {
       <MovieList movies={movies}></MovieList>
       <Timer></Timer>
       <Counter></Counter>
+      <KillCounter></KillCounter>
     </>
   );
 }
