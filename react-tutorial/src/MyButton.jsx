@@ -1,15 +1,7 @@
-import { useState } from "react";
-
-export default function MyButton() {
-  const [count, setCount] = useState(0);
-
-  function clickHandler() {
-    setCount(count + 1);
-  }
-
+export default function MyButton(props) {
   return (
     <>
-      <button onClick={clickHandler}>{count}</button>
+      <button onClick={props.onClick}>{props.count}</button>
     </>
   );
 }
