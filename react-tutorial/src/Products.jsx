@@ -6,7 +6,12 @@ export default function Products() {
   ];
 
   const listItems = products.map((product) => (
-    <li key={product.id}>{product.title}</li>
+    <li
+      key={product.id}
+      style={{ color: product.isFruit ? "magenta" : "darkgreen" }}
+    >
+      {product.title}
+    </li>
   ));
 
   return (
