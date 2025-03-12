@@ -3,18 +3,12 @@ import LoginForm from "./LoginForm";
 import User from "./User";
 
 function App() {
-  const isLoggedIn = false;
-  let content;
+  const isLoggedIn = true;
 
-  if (isLoggedIn) {
-    content = <AdminPanel></AdminPanel>;
-  } else {
-    content = <LoginForm></LoginForm>;
-  }
   return (
     <>
       <User></User>
-      {content}
+      {isLoggedIn ? <AdminPanel></AdminPanel> : <LoginForm></LoginForm>}
     </>
   );
 }
