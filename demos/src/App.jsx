@@ -1,3 +1,4 @@
+import ControlledForm from "./components/ControlledForm.jsx";
 import Counter from "./components/Counter.jsx";
 import KillCounter from "./components/KillCounter.jsx";
 import MovieList from "./components/MovieList.jsx";
@@ -47,12 +48,13 @@ function App() {
   return (
     <>
       <h1>Welcome to my app</h1>
-      <MyButton text="My Button"></MyButton>
+      {/* <MyButton text="My Button"></MyButton>
       <Profile></Profile>
       <MovieList movies={movies}></MovieList>
       <Timer></Timer>
       <Counter></Counter>
-      <KillCounter></KillCounter>
+      <KillCounter></KillCounter> */}
+      <ControlledForm></ControlledForm>
     </>
   );
 }
