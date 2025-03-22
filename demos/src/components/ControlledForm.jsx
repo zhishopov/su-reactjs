@@ -4,11 +4,11 @@ export default function ControlledForm() {
   const [values, setValues] = useState({
     username: "",
     password: "",
-    remember: false,
+    remember: true,
   });
 
   const submitHandler = (e) => {
-    e.preventDeafult();
+    e.preventDefault();
 
     console.log({ username: values.username, password: values.password });
   };
@@ -48,14 +48,13 @@ export default function ControlledForm() {
         </div>
         <div>
           <label htmlFor="remember">
-            {" "}
-            Remeber me
+            Remember me
             <input
               type="checkbox"
               id="remember"
               name="remember"
               onChange={changeHandler}
-              value={values.remember}
+              checked={values.remember}
             />
           </label>
         </div>
