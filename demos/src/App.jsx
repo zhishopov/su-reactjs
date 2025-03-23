@@ -6,6 +6,10 @@ import Timer from "./components/Timer.jsx";
 import MyButton from "./MyButton.jsx";
 import Profile from "./Profile.jsx";
 
+import { Routes, Route } from "react-router";
+import Contact from "./components/Contact.jsx";
+import Header from "./components/Header.jsx";
+
 const movies = [
   {
     title: "Inception",
@@ -48,13 +52,17 @@ function App() {
   return (
     <>
       <h1>Welcome to my app</h1>
+      <Header></Header>
+      <Routes>
+        <Route path="/contact" element={<Contact></Contact>}></Route>
+      </Routes>
       {/* <MyButton text="My Button"></MyButton>
       <Profile></Profile>
       <MovieList movies={movies}></MovieList>
       <Timer></Timer>
       <Counter></Counter>
       <KillCounter></KillCounter> */}
-      <ControlledForm></ControlledForm>
+      {/* <ControlledForm></ControlledForm> */}
     </>
   );
 }
